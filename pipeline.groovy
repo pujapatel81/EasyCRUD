@@ -6,7 +6,7 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/pujapatel81/EasyCRUD.git'
             }
         }
-        stage('build the code') {
+        stage('build and make artifact') {
             steps {
                 sh '''cd backend
                 mvn clean package  -DskipTests'''
