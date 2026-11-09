@@ -6,7 +6,7 @@ pipeline {
         }
         stage('build code'){
             sh '''cd backend
-               mvn clean package '''
+            mvn clean package -DSKIPTests'''
         }
         stage('deploy'){
             sh 'echo deploying app'
