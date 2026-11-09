@@ -14,9 +14,8 @@ pipeline {
         }
         stage('deploye the code') {
             steps {
-                sh '''
-                cd backend
-                java -jar target\\spring-backend-v1.jar'''
+                sh 'echo deploy'
+                
             }
         }
     }
